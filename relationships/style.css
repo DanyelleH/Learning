@@ -1,0 +1,19 @@
+/*<!-- 1. Make my h1 font purple
+	2. Make all my h2's font yellow
+	3. You changed your mind, you only want World and Zebra to be yellow now.
+	4. Make Unicorn and Duck font red.
+	5. You changed your mind again, make Unicorn font orange.
+	6. Why does Unicorn change from red to orange with the last rule? -->*/
+
+h1 {
+    color :purple;
+}
+section>h2 {
+    color : yellow;
+}
+article >h2 {
+    color :red;
+}
+section > article > h2 {
+    color : orange
+}
