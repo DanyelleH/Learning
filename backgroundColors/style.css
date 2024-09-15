@@ -1,0 +1,66 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    text-align: center;
+}
+button {
+    border-radius: 10px;
+}
+.colorSelector {
+    display:flex;
+    justify-content: center;
+    gap:2px;
+    border-radius: 25px;
+}
+#turnRed {
+    border-style: solid;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color:white;
+    width: 60px;
+    height: 50px;
+}
+#turnBlue {
+    border-style: outset;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    width: 60px;
+    height: 50px;
+}
+#turnOrange {
+    border-style: ridge;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+}
+#turnYellow {
+    border-style: ridge;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+}
+#turnGreen {
+    border-style: ridge;
+    background-color: green;
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+}
+#turnRandom {
+    border-style: ridge;
+    background-color:black;
+    color: lavender;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+}
+
+button:hover{
+    opacity: .3;
+}
