@@ -15,13 +15,13 @@ async function getFetch() {
     
     let pokemonImage = pokemonInfo.sprites.front_default;
     if (pokemonImage) {
-        document.querySelector("img").src= pokemonInfo.sprites.front_default;
+        document.querySelector("#mainImg").src= pokemonInfo.sprites.front_default;
     } else{
         document.querySelector("#pokemonImage").alt= "No Image Available";
     }
 
     if (isChecked) {
-        document.querySelector("img").src = pokemonInfo.sprites.front_shiny
+        document.querySelector("#mainImg").src = pokemonInfo.sprites.front_shiny
     }
     console.log(pokemonInfo)
 } 

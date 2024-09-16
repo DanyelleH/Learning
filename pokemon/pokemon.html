@@ -16,19 +16,22 @@
     <body>
         
         <h1>Whose That Pokemon?</h1>
+    <div id="input">
         <input type="text" name="" value="">
-        <button type="button" name="button"> ??? </button>
-        
-        <input id="shinyCheck" type="checkbox" value="Shiny">
-        <label for="shinyCheck">Shiny?</label>
-
-        <h2>Name:</h2>
-        <h3 id="name" ></h3>
-        <img src="pokemon.jpeg" alt="">
-
-        <h2>Type:</h2>
+        <button type="button" name="button"> <img id ="buttonIcon"src="lock.png"> </button>
+        <div><input id="shinyCheck" type="checkbox" value="Shiny">
+            <label for="shinyCheck">Shiny?</label>
+        </div>
+    </div>
+    <div id="attributes">
+        <h2>Name:</h2><h3 id="name" ></h3>
+        <h2>Type:</h2> 
         <h3 id="type"></h3>
-        
+    </div>
+    <div>
+        <img id="mainImg" src="pokemon.jpeg" alt="">
+
+    </div>
         <!-- external JS link -->
         <script type="text/javascript" src="app.js"></script>
 </body>
