@@ -22,7 +22,7 @@ function updateDisplay() {
         listItem.textContent = task ;
 
         let removeButton = document.createElement("button");
-        removeButton.textContent= "Remove";
+        removeButton.textContent= "x";
         removeButton.addEventListener("click", function(){
             removeTask(index);
     });
@@ -40,4 +40,11 @@ function removeTask(index) {
 updateDisplay()
 
 
+function update() {
+    if (this.style.textDecoration === 'line-through'){
+        this.style= 'none';
+}else {
+        this.style= "line-through"
+    }
+}
 // document.querySelector("#toDoList").innerHTML = (localStorage.getItem("tasks"))

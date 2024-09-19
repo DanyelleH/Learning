@@ -1,0 +1,10 @@
+.compiledList {
+    border-style: solid black;
+    border-width: 10px;
+    border-radius: 10%;
+    background-color: rgb(236, 182, 235);
+}
+
+#addTask {
+    height: 50px;
+}
