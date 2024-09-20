@@ -9,13 +9,13 @@ class Person():
 
 def stdDev(arr):
     age_list = []
-    variance_calc =[]
+    variance_numbers =[]
     for people in arr:
             age_list.append(people.getAge())
-    average_age = sum(age_list) // len(age_list)
+    average_age = sum(age_list) / len(age_list)
     for age in age_list:
-         variance_calc.append((age - average_age) ** 2)
-    variance = sum(variance_calc) // len(variance_calc)
+         variance_numbers.append((age - average_age) ** 2)
+    variance = sum(variance_numbers) / len(variance_numbers)
     deviation = variance ** 0.5
     return deviation
 
