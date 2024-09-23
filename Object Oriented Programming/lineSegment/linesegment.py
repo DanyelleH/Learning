@@ -28,10 +28,13 @@ class LineSegment:
     def isParallelTo(self, line_object):
         x_diff_self =self._endpoint_2.get_x_coord() - self._endpoint_1.get_x_coord()
         y_diff_self = self. _endpoint_2.get_y_coord() - self._endpoint_1.get_y_coord()
+
         x_diff_other = line_object._endpoint_2.get_x_coord() - line_object._endpoint_1.get_x_coord()
         y_diff_other = line_object._endpoint_2.get_y_coord() - line_object._endpoint_1.get_y_coord()
+
         slope_other = abs(y_diff_other / x_diff_other)
         slope_self = abs(y_diff_self / x_diff_self)
+
         if slope_other == slope_self:
             return True
         else:
@@ -40,8 +43,8 @@ class LineSegment:
     
 point_1 = Points(7,4)
 point_2 = Points(-6,18)
-point_3 = Points(-6,18)
-point_4 = Points(7,4)
+point_3 = Points(-2,2)
+point_4 = Points(24, 12)
 print(point_1.distance_to(point_2))
 
 line_1 = LineSegment(point_1,point_2) #line_1 is of the class Line segment, 
