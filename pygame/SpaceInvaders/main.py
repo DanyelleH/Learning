@@ -15,7 +15,7 @@ class Game:
         #creation of a surface
         self._space_surface = pygame.Surface((900,800))
         #createSpaceShip
-        self._space_ship = SpaceShip("SpaceInvaders/assets/DurrrSpaceShip.png", 400,800)
+        self._space_ship = SpaceShip("SpaceInvaders/assets/SpaceShip.png", 400,800)
         self._all_bullet = pygame.sprite.Group()
 
     def run(self):
