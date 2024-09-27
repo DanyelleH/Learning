@@ -1,7 +1,8 @@
 import pygame
 
-class SpaceShip:
+class SpaceShip(pygame.sprite.Sprite):
     def __init__(self, image, x ,y):
+        pygame.sprite.Sprite.__init__(self)
         self._space_ship_surface = pygame.image.load(image)
         self.rect = self._space_ship_surface .get_rect(midbottom=(x,y)) #hitboxes, this box will contain the image
     def get_position(self):
