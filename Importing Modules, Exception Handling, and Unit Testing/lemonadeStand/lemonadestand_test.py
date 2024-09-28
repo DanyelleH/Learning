@@ -1,7 +1,7 @@
 import unittest
-from LemonadeStand import MenuItem, LemonadeStand, InvalidSalesItemError
-
+from lemonadestand import SalesForDay, MenuItem, InvalidSalesItemError, LemonadeStand
 class TestLemonadeStand(unittest.TestCase):
+
   '''Contains unit tests for Lemonade Stand class'''
 
   def test_total_profit_of_stand(self):
