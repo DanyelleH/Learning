@@ -8,3 +8,6 @@ print(validAnagram('rat', 'car')) # false
 print(validAnagram('qwerty', 'qeywrt')) # true
 
 Give the Time and Space Complexity of your solution as well.
+
+Space Complexity: O(n)
+Time Complexity:O(n)

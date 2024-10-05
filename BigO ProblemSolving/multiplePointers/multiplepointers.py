@@ -1,16 +1,17 @@
 def sumZero(arr):
     # pointer method: declare a left and right pointer.
-    left, right = 0, len(arr)-1
+    left = 0 
+    right =len(arr)-1
     while left < right:
-        current_sum = arr[left] + arr[right]
+        current_sum = arr[left] + arr[right]# array at index 0, + array value at the end of the array.
 
         if current_sum == 0:
-            return [arr[left], arr[right]]
+            return [arr[left], arr[right]] #return the value in the array corresponding to the index where L and R are currently at.
         if current_sum < 0:
-            left +=1
+            left +=1 # if the sum is less than 0 ( negative), we need to moce the left ( lower ) pointer up, increasing the lopwest number to bring it closer to zero.
         else:
-            right -=1
-    return -1
+            right -=1 #if ythe sum is greater than 0 ( positive) , we need to decrease the highest number, bringing the sum closer to zero.
+    return -1 # if no -2 values result in a sum of Zero, the function returns -1
 
 
    
